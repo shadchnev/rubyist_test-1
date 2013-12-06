@@ -14,6 +14,11 @@ require 'takeaway'
           expect(takeaway.menu["Fried Chicken Roll"]).to eq(12)
       end
 
+      it 'which has 5 items on the menu' do
+          takeaway = Takeaway.new
+          expect(takeaway.menu).to have(5).things
+      end
+
     end
 
   end
