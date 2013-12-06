@@ -9,6 +9,11 @@ require 'takeaway'
           expect(takeaway.menu.include?("Fried Chicken Roll")).to be_true
       end 
 
+      it 'which lists the price of each dish' do 
+          takeaway = Takeaway.new
+          expect(takeaway.menu["Fried Chicken Roll"]).to eq(12)
+      end
+
     end
 
   end
