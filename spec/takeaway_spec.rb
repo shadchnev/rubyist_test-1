@@ -23,6 +23,7 @@ require 'takeaway'
 
     it 'checks recieved order ticket' do 
       expect(takeaway.check_order [{"Fried Chicken Roll" => 2}],24).to be_true
+      expect(takeaway.check_order [{"Fried Chicken Roll" => 2}],30).to be_false
     end
 
   end

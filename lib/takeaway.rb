@@ -12,7 +12,7 @@ class Takeaway
   end
   
 
-  def check_order(order_list,total_order)
+  def check_order(order_ticket,total_order)
       
       sum_order = []
       order_ticket.each do |order_item| 
