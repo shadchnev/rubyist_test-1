@@ -3,7 +3,7 @@ require 'takeaway'
   describe Takeaway do
 
   let(:takeaway) { Takeaway.new }
-
+    
     context 'should have a menu' do
 
       it 'which contains a dish' do 
@@ -19,7 +19,6 @@ require 'takeaway'
       end
 
     end
-
 
     it 'checks recieved order ticket' do 
       expect(takeaway.check_order [{"Fried Chicken Roll" => 2}],24).to be_true

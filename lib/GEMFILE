@@ -1,3 +1,5 @@
+# Gemfile should be in the root folder, not in lib
+# Also, only the first letter of the filename must be capital, not everything
 source "https://rubygems.org"
 
 gem 'twilio-ruby'
